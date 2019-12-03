@@ -1,7 +1,5 @@
 <?php
 
-echo "hoge";
-
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
