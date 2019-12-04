@@ -18,6 +18,10 @@ use Illuminate\Http\Request;
  * タスクダッシュボード表示
  */
 Route::get('/', function () {
+
+    $hoge = 99;
+    $fuga = 100;
+
     $tasks = Task::orderBy('created_at', 'asc')->get();
 
     return view('tasks', [

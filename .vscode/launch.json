@@ -11,7 +11,8 @@
             "port": 9001, //php.iniで設定したxdebug用のport番号
             "pathMappings": {
                 // {docker上のdocument root}:{ローカルのdocument root ←ここの開発環境に合わせる} 
-                "/work": "/Users/k_kasano/Documents/smaregi-docker/laravel60-quickstart-basic/src"
+                // "/work": "/Users/k_kasano/Documents/smaregi-docker/laravel60-quickstart-basic/src"
+                "/work": "/Users/kebo/Documents/workspace/laravel/laravel60-quickstart-basic/src"
             }
         }
     ]
