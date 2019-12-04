@@ -12,4 +12,8 @@ RUN set -eux && \
   docker-php-ext-install bcmath pdo_mysql && \
   curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
   composer config -g repos.packagist composer https://packagist.jp && \
-  composer global require hirak/prestissimo
+  composer global require hirak/prestissimo && \
+  apk add autoconf && \
+  apk add build-base && \
+  pecl install xdebug && \
+  docker-php-ext-enable xdebug
